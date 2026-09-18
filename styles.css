@@ -1,0 +1,93 @@
+body {
+    padding-bottom: 60px;
+}
+
+nav ul {
+    list-style: none; /* removes the bullets */
+    display: flex; /* links in row instead of stacked */
+    gap: 15px;
+}
+
+.box-model-row {
+    padding: 10px; /* adds space inside the box */
+}
+
+.box {
+    background-color:bisque; /* light orange background */
+}
+
+/* row 1: only border changes */
+.border-0 { border: 0px solid black; }
+.border-5 { border: 5px solid black; }
+.border-10 { border: 10px solid black; }
+
+/* row 2: only margin changes (space around the box) */
+.margin-0 { margin: 0px; }
+.margin-5 { margin: 5px; }
+.margin-10 { margin: 10px; }
+
+/* row 3: only padding changes (space inside the box) */
+.padding-0 { padding: 0px; }
+.padding-5 { padding: 5px; }
+.padding-10 { padding: 10px; }
+
+
+
+.box-showcase {
+    position: relative;
+}
+
+.sad-box, 
+.box-static, 
+.box-relative, 
+.box-absolute,
+.box-fixed {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+
+.sad-box {
+    background-color: lightpink;
+}
+
+/* default position is static */
+.box-static {
+    position: static; 
+    background-color: lightsteelblue;
+}
+
+/* relative position shifts smiley box from where it would normally sit.*/
+.box-relative {
+    position: relative; 
+    top: 20px;
+    left: 20px;
+    background-color: lightsteelblue;
+}
+
+/* absolute position moves sad box to fill the gap that smiley box left behind.*/
+.box-absolute {
+    position: absolute; 
+    left: 20px;
+    top: 20px;
+    background-color: lightsteelblue;
+}
+
+/* fixed anchors to the browser window and will ignore scrolling. */
+.box-fixed {
+    position: fixed; 
+    top: 0;
+    left: 20px;
+    background-color: lightsteelblue;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+
+}

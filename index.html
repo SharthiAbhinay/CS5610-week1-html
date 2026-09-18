@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Concepts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#tags">HTML tags</a></li>
+            <li><a href="#header-tags">SEO Header tags</a></li>
+            <li><a href="#grid">HTML Grid</a></li>
+            <li><a href="#box-model">Box Model Gallery</a></li>
+            <li><a href="#font-sizes">Font Sizes</a></li>
+            <li><a href="#showcase">Position Showcase</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>All Things Web Dev</h1>
+        <p>A showcase of HTML, CSS, and JS skills.</p>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>This webpage is serving as a lesson for learning the vanilla concepts of HTML, CSS, and JS.</p>
+        </section>
+
+        <section id ="tags">
+            <h2>Most Useful HTML tags</h2>
+            <p>Throughout this lesson, I am learning which HTML tags I find the most useful. I will provide a list.</p>
+            <ul>
+                <li>&lt;nav&gt; - wraps the navbar links</li>
+                <li>&lt;ul&gt; - the nav's link list and any other list content</li>
+                <li>&lt;a&gt; - creates a hyperlink</li>
+                <li>&lt;h1&gt; - the main heading of the page</li>
+                <li>&lt;h2&gt; - the subheading of the page</li>
+                <li>&lt;section&gt; - groups related content together</li>
+                <li>&lt;div&gt; - a generic container for content</li>
+                <li>&lt;span&gt; - a generic inline container for content</li>
+                <li>&lt;p&gt; - a paragraph of text</li>
+                <li>&lt;footer&gt; - the footer of the page</li>
+            </ul>
+        </section>
+
+        <section id="header-tags">
+            <h2>SEO Header tags</h2>
+            <p>Part of this lesson is about researching SEO and how to use header tags. Here, I provide a list of the most important things I learned.</p>
+            <ul>
+                <li>h1 serves as the headline. It is the main topic. It is for users and search engines. Since there is only one h1 per page, it should match search intent.</li>
+                <li>h2 header tags break the content into clear sections. they help users scan easily and help search engines such as google understand the sub topics.</li>
+                <li>h3 header tags organize details and dive deeper into specifics within the h2s.</li>
+                <li>search engines rewrite the title tags based off header tags.</li>
+                <li>golden rule: write headers that serve users/readers first, then SEO. Make them concise, easy to skim, and intentional. Do not keyword stuff. Clarity first.</li>
+            </ul>
+        </section>
+
+        <section id="grid">
+            <h2>HTML grid</h2>
+            <p>Here is an example of a grid layout using divs and spans. The grid is 3x3.</p>
+            <div>
+                <span>1</span> <span>2</span> <span>3</span>
+            </div>
+            <div>
+                <span>4</span> <span>5</span> <span>6</span>
+            </div>
+            <div>
+                <span>7</span> <span>8</span> <span>9</span>
+            </div>
+        </section>
+
+        <section id="box-model">
+            <h2>Box Model Gallery</h2>
+            <p>Visual examples of the CSS box model.</p>
+            <p>Each row changes one property (border, margin, padding). Each column tries a different value (0px, 5px, 10px).</p>
+
+            <h3>Border</h3>
+            <div class="box-model-row">
+                <span class="box border-0">Box</span>
+                <span class="box border-5">Box</span>
+                <span class="box border-10">Box</span>
+            </div>
+
+            <h3>Margin</h3>
+            <div class="box-model-row">
+                <span class="box margin-0">Box</span>
+                <span class="box margin-5">Box</span>
+                <span class="box margin-10">Box</span>
+            </div>
+
+            <h3>Padding</h3>
+            <div class="box-model-row">
+                <span class="box padding-0">Box</span>
+                <span class="box padding-5">Box</span>
+                <span class="box padding-10">Box</span>
+            </div>
+        </section>
+
+        <section id="font-sizes">
+            <h2>Font Sizes</h2>
+            <p>Here is an itemized list the same sentece with six different font sizes.</p>
+            <ul>
+                <li>
+                    <span style="font-size: 5px;">The bunny is round and fluffy.</span>
+                    <p> px, an absolute size: Use when you want the size to stay the same regardless of the user's device. For example when you want an icon to always stay the same size.</p>
+                </li>
+
+                <li>
+                    <span style="font-size: 5cm;">The bunny is round and fluffy.</span>
+                    <p>pt, an absolute size: Use when you want the the web page's printed font to be that exact size. Foe example for a stylesheet a user will print out. pt is taken from typography for printing.</p>
+                    </li>
+                <li>
+                    <span style="font-size: 5cm;">The bunny is round and fluffy.</span>
+                    <p>cm, an absolute size: Use when you want the size to be in centimeters. It is a real-world measurement that is rarely used for screens. For example for a printed label that must match dimensions of a real-world object.</p>
+                </li>
+                <li>
+                    <span style="font-size: 5em;">The bunny is round and fluffy.</span>
+                    <p>em, a relative size: Use when you want the size to be relative to the parent element. For example if you want the font to grow or shrink relative to the button's size.</p>
+                </li>
+
+                <li>
+                    <span style="font-size: 5rem">The bunny is round and fluffy.</span>
+                    <p>rem, a relative size: Use when you want the size to be relative to the root element. For example this is good for general purpose and doesn't rely on a parent element, but the entire root of the html. Good for a user's font and browser settings.</html>.</p>
+                </li>
+
+                <li>
+                    <span style="font-size: 5vw">The bunny is round and fluffy.</span>
+                    <p>vw, a relative size: Use when you want the size to be relative to the viewport width. For example this is good for long news headline, that will shrink on a narrow phone screen, but be long on a wide monitor. This is good without needing to separate rules for the view port.</p>
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="showcase">
+            <h2>Position Showcase</h2>
+            <p>Two boxes per row. Smiley face box gets each positioning type applied. Sad face box is static. This lets you see how smiley face box's positioning affects the box next to it.</p>
+            <div class="box-showcase">
+                <p>Static positioning is the default. The box is positioned according to the normal flow of the document. Use case is to use this for most elements on the page unless you want to break the normal flow of the document.</div></p>
+                <div class="box-static">😁</div>
+                <div class="sad-box">😢</div>
+            </div>
+            <div class="box-showcase">
+                <p>Relative positioning allows you to offset an element from its normal position. Use case is to move the element relative to the other element, in this case is putting the boxes side by side. Use without disturbing the other elements around it.</p>
+                <div class="box-relative">😁</div>
+                <div class="sad-box">😢</div>
+            </div>
+
+            <div class="box-showcase">
+                <p>Absolute positioning allows you to position an element relative to its nearest positioned ancestor. Use case is to move the element to a specific location on the page, such as an icon that you dont want to move. Like putting it in the corner of a website.</p>
+                <div class="box-absolute">😁</div>
+                <div class="sad-box">😢</div>
+            </div>
+
+            <div class="box-showcase">
+                <p>Fixed positioning allows you to position an element relative to the viewport. Use case is for the element to always stay visible regardless of the user scrolling. This could be used for a 'back to top' button.</p>
+                <div class="box-fixed">😁</div>
+                <div class="sad-box">😢</div>
+            </div>
+
+            <p> I will be using the fixed positioning for the footer, so it always stays at the bottom of the screen for the user to see.</p>
+        </section>
+
+    </main> 
+
+    <footer>
+        <p>&copy; Made by Mimi with love.</p>
+    </footer>
+
+</body>
+</html>
