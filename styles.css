@@ -9,10 +9,16 @@ nav ul {
 }
 
 .box-model-row {
-    padding: 10px; /* adds space inside the box */
+    background-color: gainsboro; /* margin is transparent, so this grey strip
+                                    makes the space around each box visible */
+    padding: 10px; /* space inside the row, so boxes aren't flush to the edge */
 }
 
 .box {
+    /* spans are inline by default, and inline elements ignore vertical margin
+       and let vertical padding overflow onto neighboring lines.
+       inline-block keeps them side by side but makes the whole box model work. */
+    display: inline-block;
     background-color:bisque; /* light orange background */
 }
 
